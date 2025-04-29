@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class TestService {
-    private final TestRepository testRepository;
+    private TestRepository testRepository;
 
     @Transactional
     public List<Test> findAllTests() {
