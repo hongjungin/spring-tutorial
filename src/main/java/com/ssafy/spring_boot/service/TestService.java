@@ -9,11 +9,14 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class TestService {
-    private TestRepository testRepository;
+    private final TestRepository testRepository;
 
-    @Transactional
+    public TestService(TestRepository testRepository) {
+        this.testRepository = testRepository;
+    }
+
+    @Transactional(readOnly = true)
     public List<Test> findAllTests() {
         return testRepository.findAll();
     }
