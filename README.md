@@ -1,7 +1,7 @@
 # spring-tutorial
 
 ## 1️⃣ spring-tutorial를 완료하자!
-### 1주차 미션 성공 -!
+### 1주차 미션 성공 !
 
   > api 요청 결과
 <img width="428" alt="image" src="https://github.com/user-attachments/assets/0e633b91-355a-4947-9ce2-619490ddfcab" />
